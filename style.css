@@ -1,0 +1,95 @@
+
+body {
+      font-family: system-ui, -apple-system, sans-serif;
+      margin: 0;
+      padding: 20px;
+      height: 250vh;
+      background: linear-gradient(to right, #16a7c7, #feb47b);
+      line-height: 1.6;
+      box-sizing: border-box;
+}
+
+.header-blog{
+    display: flex; 
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+}
+
+h1{
+      /* color: linear-gradient(to left, #16a7c7, #feb47b); */
+}
+
+.p-header{
+      width: 50vw; 
+      min-width: 320px;       
+}
+
+main{
+    display: flex; 
+    flex-direction: column;
+    align-items:center;
+    gap: 20px;
+
+
+}
+
+article{
+      width: 60vw; 
+      min-width: 320px;
+      height: auto;
+      border: 2px solid gray;
+      border-radius: 8px;
+      padding: 10px;
+}
+
+article:has(input:checked){
+      background-color: black;
+      color:white;
+}
+
+.header-article{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;      
+}
+
+h2{
+      font-size: 1.2rem;
+}
+
+.options{
+      /* display: flex;
+      flex-direction: row;
+      justify-content:space-around;
+      gap: 5px;      */
+}
+
+label{
+      font-size: 0.8rem;
+}
+
+button{
+      border: 1px solid rgb(176, 173, 173);
+      border-radius: 5px;
+      font-size: 0.8rem;
+      margin-left: 4px;
+}
+
+button:hover{
+      background-color: red;
+      cursor: pointer;    
+}
+
+.content-article::first-letter{
+      text-transform: uppercase;
+      font-size: 2rem;
+      font-weight: bold;
+}
+
+.content-article::first-line{
+      font-weight: bold;
+}
+
+
